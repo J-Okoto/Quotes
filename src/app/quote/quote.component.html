@@ -1,6 +1,10 @@
-<div>
+<div class='jumbotron'>
     <h1>My Quotes</h1>
     <hr>
+
+    <div class='row'>
+      <div class='col-md-6'></div>
+      <div class='col-md-6'>
     <ul>
       <li *ngFor='let quote of quotes;let i = index'>
        <p> {{quote.title}}</p>
@@ -15,5 +19,7 @@
         <app-quote-details [quote]='quote'></app-quote-details>
       </li>
     </ul>
+    </div>
+   </div>
   </div>
   
