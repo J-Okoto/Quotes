@@ -17,6 +17,15 @@ export class QuoteComponent implements OnInit {
   new Quote('Investment ', 'Never invest in a business you cannot understand.', 'Warren Buffett','Joe', new Date(2019, 8 - 1, 17),0,0)
 ];
 
+deleteQuote(isComplete, index) {
+  if (isComplete) {
+    let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].body}?`)
+    if (toDelete) {
+      this.quotes.splice(index, 1)
+
+    }
+  }
+}
   constructor() { }
 
   ngOnInit() {
