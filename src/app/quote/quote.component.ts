@@ -17,9 +17,18 @@ export class QuoteComponent implements OnInit {
   new Quote('Investment ', 'Never invest in a business you cannot understand.', 'Warren Buffett','Joe', new Date(2019, 8 - 1, 17),0,0)
 ];
 
+toggleDetails(index) {
+  this.quotes[index].showCompleteDate = !this.quotes[index].showCompleteDate;
+}
+addNewQuote(quote){
+  let quoteLength = this.quotes.length
+  quote.completeDate = new Date(quote.completeDate)
+  this.quotes.push(quote)
+}
+
 deleteQuote(isComplete, index) {
   if (isComplete) {
-    let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].body}?`)
+    let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].title}?`)
     if (toDelete) {
       this.quotes.splice(index, 1)
 

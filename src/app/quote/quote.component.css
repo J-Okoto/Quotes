@@ -1,1 +1,66 @@
-h1{text-align: center;}
+@import url("https://fonts.googleapis.com/css?family=Bungee+Inline|Gabriela|Gravitas+One|Ultra&display=swap");
+
+
+
+
+h1{text-align: center;
+color:red,}
+
+  
+  .card-header {
+    background-color: #808080;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Gravitas One', cursive;
+  }
+  .title {
+    margin: 8px;
+    color: rgb(255, 255, 255);
+    font-family: 'Gravitas One', cursive;
+  }
+  
+  
+  .header {
+    position: relative;
+    font-size: 70px;
+    color: darkgoldenrod;
+    font-family: 'Gravitas One', cursive;
+    text-align: center;
+  }
+  
+  .header {
+    position: relative;
+    font-size: 70px;
+    color: darkgoldenrod;
+    font-family: 'Gravitas One', cursive;
+    text-align: center;
+  }
+  .card {
+    width: 200px;
+    border: none;
+    margin: 15px 5px 3%;
+    background-color: #ffe6e6;
+    margin-left:10px;
+    
+  }
+  #body{
+    margin: 50px 10px 10px 10px;
+    font-family: 'Gabriela', serif;
+    font-weight: normal;
+    font-size: 19px;
+  
+  }
+  #author{
+    margin: 10px 10px 10px 10px;
+    font-family: 'Gabriela', serif;
+    font-size: 16px;
+    font-weight: lighter;
+    color: gray;
+  }
+  .cards{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  
+  }

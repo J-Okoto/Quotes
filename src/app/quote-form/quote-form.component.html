@@ -1,7 +1,7 @@
 
     <h2 class="text-center">Create a new Quote</h2>
     <hr>
-    <form #quoteForm='ngForm'>
+    <form (ngSubmit)='submitQuote()'#quoteForm='ngForm'>
         <label for="name">Title:</label>
         <input type="text" class="form-control" placeholder="title" id="title" [(ngModel)]="newQuote.title" name="title" #title='ngModel' required>
          {{newQuote.title}}
