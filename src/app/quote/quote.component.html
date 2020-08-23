@@ -2,10 +2,13 @@
     <h1>My Quotes</h1>
     <hr>
     <ul>
-        <li *ngFor='let quote of quotes'>
-          {{quote.name}}
-          <app-quote-detail [goal]='goal'></app-quote-detail> 
-        </li>
-      </ul>
-  
+      <li *ngFor='let quote of quotes'>
+       <p> {{quote.title}}</p>
+       <P>{{quote.body}}</P> 
+        Author:{{quote.author}}
+        
+        <app-quote-details [quote]='quote'></app-quote-details>
+      </li>
+    </ul>
   </div>
+  
