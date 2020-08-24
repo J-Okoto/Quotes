@@ -21,23 +21,17 @@ color:red,}
   }
   
   
-  .header {
-    position: relative;
-    font-size: 70px;
-    color: darkgoldenrod;
-    font-family: 'Gravitas One', cursive;
-    text-align: center;
-  }
+  
   
   .header {
     position: relative;
-    font-size: 70px;
+    font-size: 50px;
     color: darkgoldenrod;
     font-family: 'Gravitas One', cursive;
     text-align: center;
   }
   .card {
-    width: 200px;
+    width: 250px;
     border: none;
     margin: 15px 5px 3%;
     background-color: #ffe6e6;
@@ -61,6 +55,6 @@ color:red,}
   .cards{
     display:flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content:space-between;
   
   }

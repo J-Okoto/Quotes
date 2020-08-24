@@ -1,27 +1,41 @@
 # Quotes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.6.
 
-## Development server
+## Description
+- An application that enables users to add quotes,delete quotes.You can view quotes added by others and upvote and downvote quotes.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Behaviour Driven Development(BDD)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+| Input                        | Ouput                                                                                            |
+|--------------------------    |----------------------------------------------------------------------------------------------    |
+| User clicks Post  Quote     | Quote form displays with input fields for Author, Publisher                  |
+| User Clicks Delete           | The quote is purged from view             |
+| User clicks Upvote        |   upvote is incremented value by   1 on each click      |
+| User clicks Downvote     | downvote is decremented value by 1 on each click     |
 
-## Build
+## Setup/Installation requirements
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+- Clone  or download and unzip the repository from github, [https://github.com/J-Okoto/Quotes/](https://github.com/J-Okoto/Quotes.git).
 
-## Running unit tests
+- If you have git Use this command `git clone *` to clone the project.
+- Run ng serve from your terminal
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Live Demo
+To view the page click on the link below
+* [https://J-Okoto.github.io/Quotes/](*)
 
-## Running end-to-end tests
+## Technologies Used
+- Angular CLI
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Known Bugs
+- There are no known bugs currently. The page works as expected.
 
-## Further help
+## Support and Contact Details
+- For any comments,suggestions,feedback or inquiries, contact me via email: `okotojr@gmail.com`
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+- Make contributions to the code.
+
+## License
+- This project is licensed under the MIT Open Source license Copyright (c) 2020. [JOKOTO](https://github.com/peter-wachira)

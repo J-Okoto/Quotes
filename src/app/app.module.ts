@@ -24,6 +24,7 @@ import { HighlightDirective } from './highlight.directive';
     BrowserModule,
     AppRoutingModule,
     FormsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,6 +1,6 @@
 <p>Publisher:{{quote.publisher}}|{{quote.completeDate|date|uppercase}} |posted
   {{quote.completeDate|dateCount}} days ago</p>
-  <button (click)= 'quoteDelete(true)'class="btn btn-outline-danger">Delete Quote</button>
+  
 
   <div class="footer">
     
@@ -14,4 +14,5 @@
       ></div>
       <h5>{{ numberOfDislikes }}</h5>
     </div>
+    <button (click)= 'quoteDelete(true)'class="btn btn-outline-danger">Delete Quote</button>
   </div>

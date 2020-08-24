@@ -5,24 +5,30 @@
     <div class='row'>
       <div class='col-md-4'>
         
-        <app-quote-form>(addQuote)="addNewQuote($event)"></app-quote-form>
+        <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
       </div>
+      
 
       <div class='cards col-md-8'>
         <div class ="card"*ngFor='let quote of quotes;let i = index'>
           <div class ="card-header">
             <h4 class="text-center title" id ="title">{{quote.title}} </h4>
-            <div *ngIf='quote.showCompleteDate'>
-              <app-quote-detail [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-detail>
-              
-            </div>
-            <div  class="del" (click)="toggleDetails(i)"></div>
-            </div>
-            <h4 id="body" appHighlight> {{quote.body}}</h4>
-            <h4 id="author"> -{{quote.author}}</h4>
-            <app-quote-details [quote]='quote'></app-quote-details>
-  
             
+            
+            </div>
+
+            
+            <p id="body"  appHighlight > {{quote.body}}</p>
+            
+            <h4 id="author"> -{{quote.author}}</h4>
+            
+            
+            
+              <app-quote-detail *ngIf='quote.showCompleteDate'[quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-detail>
+             
+            
+
+            <app-quote-details [quote]='quote'></app-quote-details>
         </div>
         
       </div>
