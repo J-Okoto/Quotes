@@ -26,6 +26,9 @@ export class QuoteDetailsComponent implements OnInit {
     this.numberOfDislikes++;
   }
 
+
+
+
   constructor() { }
 
   ngOnInit(): void {
