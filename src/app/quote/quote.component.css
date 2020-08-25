@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Bungee+Inline|Gabriela|Gravitas+One|Ultra&display=swap");
 
-
+.card-footer{text-align-last: right;}
 .navbar{color:white;}
 
 h1{text-align: center;
